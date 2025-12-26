@@ -1,22 +1,12 @@
 spring:
   application:
     name: backend
-
-
-#  data:
-#    mongodb:
-#      # I have inserted your specific password (X5tvQHNRGI3UNNa2) and added a database name (tourism_db)
-#      uri: mongodb+srv://sadarhussain0001:X5tvQHRNGI3UNNa2@clustersadar.yrvqlpf.mongodb.net/tourism_db?retryWrites=true&w=majority&appName=ClusterSadar
-#
-#      # Optional: Automatically creates indexes (like unique email) defined in your @Indexed annotations
-#      auto-index-creation: true
-
-
   data:
     mongodb:
       auto-index-creation: true
   mongodb:
     uri: ${MONGO_URL}
+    database: tourism_db
+
 server:
   port: 8080
-
