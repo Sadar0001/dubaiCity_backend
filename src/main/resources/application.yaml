@@ -16,7 +16,7 @@ spring:
     mongodb:
       auto-index-creation: true
   mongodb:
-    uri: mongodb+srv://sadarhussain0001:X5tvQHRNGI3UNNa2@clustersadar.yrvqlpf.mongodb.net/tourism_db?retryWrites=true&w=majority&appName=ClusterSadar
+    uri: ${MONGO_URL}
 server:
   port: 8080
 
