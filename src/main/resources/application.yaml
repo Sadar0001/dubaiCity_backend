@@ -3,10 +3,8 @@ spring:
     name: backend
   data:
     mongodb:
+      connection-string: ${MONGO_URL}
       auto-index-creation: true
-  mongodb:
-    uri: ${MONGO_URL}
-    database: tourism_db
 
 server:
   port: 8080
